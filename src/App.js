@@ -16,6 +16,12 @@ import {
   PasswordUpdate,
   Wishlist,
   AdminDashboard,
+  CategoryCreate,
+  Product,
+  SubCategory,
+  Coupons,
+  AllProduct,
+  CategoryUpdate,
 } from './pages/index.js';
 import Header from './components/nav/header';
 import UserRoute from './components/routes/userRoute';
@@ -65,6 +71,12 @@ const App = () => {
         <UserRoute exact path="/user/password" component={PasswordUpdate} />
         <UserRoute exact path="/user/wishlist" component={Wishlist} />
         <AdminRoute exact path="/admin/dashboard" component={AdminDashboard} />
+        <AdminRoute exact path="/admin/category" component={CategoryCreate} />
+        <AdminRoute exact path="/admin/product" component={Product} />
+        <AdminRoute exact path="/admin/products" component={AllProduct} />
+        <AdminRoute exact path="/admin/sub" component={SubCategory} />
+        <AdminRoute exact path="/admin/coupons" component={Coupons} />
+        <AdminRoute exact path="/admin/category/:slug" component={CategoryUpdate} />
       </Switch>
     </>
   );

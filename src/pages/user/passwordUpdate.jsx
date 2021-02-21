@@ -47,8 +47,7 @@ const PasswordUpdate = () => {
             </label>
             <br />
             <button disabled={!password || password.length < 6} className="update--form--button">
-              {' '}
-              Update password{' '}
+              Update password
             </button>
             <br />
           </form>

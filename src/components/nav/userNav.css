@@ -1,0 +1,12 @@
+.user_nav {
+  position: absolute;
+  min-height: 100%;
+}
+.user_nav--ul {
+  list-style: none;
+}
+.user_nav--ul--li {
+  padding: 0.5rem;
+  font-size: 16px;
+  text-transform: uppercase;
+}

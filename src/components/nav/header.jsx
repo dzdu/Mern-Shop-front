@@ -11,7 +11,7 @@ import React from 'react';
 import firebase from 'firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import './style.css';
+import './header.css';
 
 const { SubMenu, Item } = Menu;
 
@@ -59,9 +59,16 @@ const Header = () => {
             key="SubMenu"
             icon={<AppstoreOutlined />}
             title={user.email && user.email.split('@')[0]}>
-            <Item key="setting:1">
-              <Link to="/user/history">Profile</Link>
-            </Item>
+            {user && user.role === 'subscriber' && (
+              <Item key="setting:1">
+                <Link to="/user/history">Dashboard</Link>
+              </Item>
+            )}
+            {user && user.role === 'admin' && (
+              <Item key="setting:1">
+                <Link to="/admin/dashboard">Dashboard</Link>
+              </Item>
+            )}
             <Item key="setting:2">Opt 2</Item>
             <Item key="setting:3" onClick={logout} icon={<UserDeleteOutlined />}>
               Log out

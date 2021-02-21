@@ -2,13 +2,13 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const LoadingRedirect = () => {
-  const [count, setCount] = React.useState(7);
+  const [count, setCount] = React.useState(15);
   const history = useHistory();
 
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCount((currentCount) => --currentCount);
-    }, 700);
+    }, 1500);
     count === 0 && history.push('/login');
     return () => clearInterval(interval);
   }, [count, history]);
