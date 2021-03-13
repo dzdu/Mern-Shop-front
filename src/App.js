@@ -22,6 +22,7 @@ import {
   Coupons,
   AllProduct,
   CategoryUpdate,
+  SubUpdate,
 } from './pages/index.js';
 import Header from './components/nav/header';
 import UserRoute from './components/routes/userRoute';
@@ -77,6 +78,7 @@ const App = () => {
         <AdminRoute exact path="/admin/sub" component={SubCategory} />
         <AdminRoute exact path="/admin/coupons" component={Coupons} />
         <AdminRoute exact path="/admin/category/:slug" component={CategoryUpdate} />
+        <AdminRoute exact path="/admin/sub/:slug" component={SubUpdate} />
       </Switch>
     </>
   );
