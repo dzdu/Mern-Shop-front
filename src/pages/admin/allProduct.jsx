@@ -6,7 +6,7 @@ const AllProduct = () => {
     <>
       <AdminNav />
       <div className="admin-container ategory">
-        <h1>AllProduct</h1>
+        <h1>All products</h1>
         <p>some text</p>
       </div>
     </>

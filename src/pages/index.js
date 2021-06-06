@@ -18,8 +18,9 @@ export { default as AdminDashboard } from './admin/AdminDashboard';
 export { default as CategoryCreate } from './admin/categories/category';
 export { default as CategoryUpdate } from './admin/categories/categoryUpdate';
 
-export { default as Product } from './admin/product';
+//export { default as Product } from './admin/product';
 export { default as SubCategory } from './admin/categories/subCategory';
 export { default as SubUpdate } from './admin/categories/subUpdate';
 export { default as Coupons } from './admin/coupons';
 export { default as AllProduct } from './admin/allProduct';
+export { default as ProductCreate } from './admin/product/productCreate';
